@@ -8,6 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Raleway';
 }
 
 body{
@@ -20,6 +22,11 @@ body{
 html, body{
     margin: 0;
     padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Lilita One';
+    font-weight: normal;
 }
 
 header{
@@ -79,7 +86,7 @@ footer{
         gap: 0.5rem;
         
         svg{
-            width: 2rem;
+            width: 1.2rem;
         }
     }
     
@@ -93,6 +100,7 @@ footer{
         height: 100%;
         text-align: right;
         font-style: italic;
+        font-family: 'Lilita One';
 
         padding: 1rem 1.5rem;
         background-color: black;
