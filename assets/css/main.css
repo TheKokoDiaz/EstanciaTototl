@@ -3,6 +3,7 @@
     --greenLess: rgb(125, 171, 125);
     --greenDark: rgb(4, 42, 4);
 
+    --brown: rgb(30, 18, 1);
     --brownLess: rgb(255, 235, 206);
 }
 
@@ -114,6 +115,6 @@ footer{
         font-family: 'Lilita One';
 
         padding: 1rem 1.5rem;
-        background-color: black;
+        background-color: var(--brown);
     }
 }
