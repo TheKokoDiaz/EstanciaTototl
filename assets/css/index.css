@@ -4,13 +4,56 @@ main{
     
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    flex-wrap: nowrap;
+
+    overflow-x: hidden;
     
     margin-top: 1.25rem;
+    transition-duration: 300ms;
     
-    .carruselItem{
-        width: 100%;
+    button{
+        width: 3rem;
         height: 40vh;
+
+        position: absolute;
+        z-index: 1;
+
+        color: white;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.2);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        cursor: pointer;
+        transition-duration: 300ms;
+
+        svg{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    
+    button:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    #carouselBack{
+        left: 0;
+    }
+
+    #carouselNext{
+        right: 0;
+    }
+
+    .carruselItem{
+        width: 100vw;
+        height: 100%;
+        flex-shrink: 0;
+        
+        display: block;
 
         .blackBlur{
             width: 100%;
@@ -30,8 +73,12 @@ main{
             
             gap: 1rem;
 
+            h2{
+                text-align: center;
+            }
+
             span{
-                width: 80%;
+                width: 70%;
                 text-align: center;
             }
             
@@ -54,11 +101,22 @@ main{
         }
     }
 
-    .item1{
-        background-image: url("../imgs/garden/gardenCenter.jpg");
+    .item1, .item2, .item3{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .item1{
+        background-image: url("../imgs/garden/gardenCenter.jpg");
+    }
+    
+    .item2{
+        background-image: url("../imgs/f2Room/general.jpg");
+    }
+
+    .item3{
+        background-image: url("../imgs/garden/roasterCentral.jpg");
     }
 }
 

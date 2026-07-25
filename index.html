@@ -32,7 +32,23 @@
         <h1>Tototl</h1>
     </header>
 
-    <main>
+    <main id="carrusel">
+        <!-- Carrusel Buttons -->
+        <button id="carouselBack" onclick="carouselGoBack()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-badge-left">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 17h6l-4 -5l4 -5h-6l-4 5l4 5" />
+            </svg>
+        </button>
+
+        <button id="carouselNext" onclick="carouselGoNext()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-badge-right">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M13 17h-6l4 -5l-4 -5h6l4 5l-4 5" />
+            </svg>
+        </button>
+
+        <!-- Carrusel Items -->
         <div class="carruselItem item1">
             <div class="blackBlur">
                 <h2>¡Echa un vistazo!</h2>
@@ -42,6 +58,30 @@
                 </span>
 
                 <a href="">Ver</a>
+            </div>
+        </div>
+
+        <div class="carruselItem item2">
+            <div class="blackBlur">
+                <h2>Conoce las habitaciones</h2>
+
+                <span>
+                    Oberva las habitaciones que tenemos para ti y todo lo que incluyen para una vivienda cómoda.
+                </span>
+
+                <a href="">Revisar</a>
+            </div>
+        </div>
+        
+        <div class="carruselItem item3">
+            <div class="blackBlur">
+                <h2>¿Tienes preguntas?</h2>
+
+                <span>
+                    Contáctanos y resolveremos todas tus dudas.
+                </span>
+
+                <a href="">Contacto</a>
             </div>
         </div>
     </main>
@@ -90,7 +130,7 @@
         <div class="col2">
             <h3>Véase también:</h3>
             <ul>
-                <li><a href="">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="">Habitaciones</a></li>
                 <li><a href="">Contacto</a></li>
             </ul>
@@ -110,5 +150,8 @@
             </script>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
