@@ -1,26 +1,26 @@
-const carrusel = document.querySelector('#carrusel');
-const carruselItem = document.querySelector('.carruselItem');
+const carousel = document.querySelector('#carousel');
+const carouselItem = document.querySelector('.carouselItem');
 
 function carouselGoNext(){
-    if(carruselItem.offsetWidth + carrusel.scrollLeft >= carrusel.scrollWidth) {
-        carrusel.scrollLeft = 0;
+    if(carouselItem.offsetWidth + carousel.scrollLeft >= carousel.scrollWidth) {
+        carousel.scrollLeft = 0;
         return;
     }
 
-    carrusel.scrollTo({
-        left: carrusel.scrollLeft + carruselItem.offsetWidth,
+    carousel.scrollTo({
+        left: carousel.scrollLeft + carouselItem.offsetWidth,
         behavior: 'smooth'
     });
 }
 
 function carouselGoBack(){
-    if(carrusel.scrollLeft <= 0) {
-        carrusel.scrollLeft = carrusel.scrollWidth;
+    if(carousel.scrollLeft <= 0) {
+        carousel.scrollLeft = carousel.scrollWidth;
         return;
     }
     
-    carrusel.scrollTo({
-        left: carrusel.scrollLeft - carruselItem.offsetWidth,
+    carousel.scrollTo({
+        left: carousel.scrollLeft - carouselItem.offsetWidth,
         behavior: 'smooth'
     });
 }
