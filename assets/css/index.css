@@ -116,7 +116,7 @@ main{
     }
 
     .item3{
-        background-image: url("../imgs/garden/roasterCentral.jpg");
+        background-image: url("../imgs/f3/general.jpg");
     }
 }
 
@@ -131,22 +131,24 @@ main{
         width: 100%;
         border-radius: 8px;
         margin-top: 1rem;
+        border: 4px solid black;
     }
 }
 
-.objective{
+.services{
     color: white;
     background-color: var(--green);
-
+    
     li{
         margin-top: 0.5rem;
         margin-left: 1rem;
     }
-
+    
     img{
         width: 100%;
         border-radius: 8px;
         margin-top: 1rem;
+        border: 4px solid white;
     }
 }
 

@@ -56,8 +56,8 @@ header{
 
     svg{
         stroke: white;
-        width: 1.5rem;
-        height: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
 
@@ -110,6 +110,7 @@ footer{
             display: flex;
             align-items: center;
             justify-content: start;
+            flex-grow: 0;
 
             gap: 0.5rem;
             margin-top: 0.5rem;
@@ -117,6 +118,8 @@ footer{
             svg{
                 width: 1.4rem;
                 height: 1.4rem;
+
+                flex-shrink: 0;
             }
         }
     }
